@@ -6,7 +6,12 @@ header {
 }
 
 div#wrapper {
-    margin: 10px;
+    margin: 0 auto;
+}
+div#content {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
 }
 
 nav {
@@ -14,6 +19,7 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
 li {
@@ -39,3 +45,7 @@ li a:hover:not(.active) {
   .active {
     background-color: #4CAF50;
   }
+
+p.bold {
+    font-weight: bold;
+}

@@ -10,9 +10,9 @@
     <?php } ?>
 </head>
 <body>
-    <?php include("./templates/pages/header.tpl.php"); ?>
 
     <div id="wrapper">
+        <?php include("./templates/pages/header.tpl.php"); ?>
         <?php include("./templates/pages/aside.tpl.php"); ?>
     </div>
     <div id="content">
