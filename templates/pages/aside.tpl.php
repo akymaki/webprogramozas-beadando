@@ -1,7 +1,7 @@
 <aside id="nav">
     <nav>
         <?php foreach ($oldalak as $url => $oldal) { ?>
-                <li <?php (($oldal['fajl'] == $keres) ? 'class="active"':'') ?> >
+                <li <?php (($oldal == $keres) ? 'class="active"':'') ?> >
                     <a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
                         <?= $oldal['szoveg'] ?>
                     </a>

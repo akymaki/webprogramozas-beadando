@@ -10,10 +10,10 @@
     <?php } ?>
 </head>
 <body>
-    <?php include("./templates/pages/header.php"); ?>
+    <?php include("./templates/pages/header.tpl.php"); ?>
 
     <div id="wrapper">
-        <?php include("./templates/pages/aside.php"); ?>
+        <?php include("./templates/pages/aside.tpl.php"); ?>
     </div>
     <div id="content">
         <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
