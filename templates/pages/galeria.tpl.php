@@ -4,8 +4,9 @@
     while(($fajl = readdir($olvaso)) !== false)
         if(is_file($KEPEKMAPPA.$fajl)) {
             $vege =strtolower(substr($fajl, strlen($fajl) - 4));
+            $vege = substr($fajl, strpos($fajl, "_") + 1);
             if(in_array($vege, $TIPUSOK))
-                $kepek[$fajl] = filemtime($KEPEKMAPPA.fajl);
+                $kepek[$fajl] = filemtime($KEPEKMAPPA.$fajl);
         }
     closedir($olvaso);
 ?>

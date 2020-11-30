@@ -14,6 +14,10 @@ $lablec = array (
 );
 
 $KEPEKMAPPA='./images/galeria/';
+$TIPUSOK=array('.jpg', '.png', '.webp');
+$MEDIATIPUSOK=array('image/jpeg', 'image/png');
+$DATUMFORMA="Y.m.d. H:i";
+$MAXMERET = 500*1024;
 
 $oldalak = array(
     '/'=>array('fajl'=>'cimlap', 'szoveg'=>'Címlap'),
