@@ -8,7 +8,7 @@ function ellenoriz() {
 	var rendben = true;
 	var fokusz = null;
 
-	var szoveg = document.getElementById("szoveg");
+	var szoveg = document.getElementById("uzenet");
 	if (szoveg) {
 		if (szoveg.value.length==0) {
 			rendben = false;

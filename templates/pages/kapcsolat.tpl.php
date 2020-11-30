@@ -8,7 +8,7 @@
         <br/>
         <label>Email:<input type="text" id="email" name="email" size="30" maxlength="40"></label>
         <br/>
-        <label>Üzenet: <textarea id="szoveg" name="szoveg" size="20" cols="40" rows="10"></textarea></label>
+        <label>Üzenet: <textarea id="uzenet" name="uzenet" size="20" cols="40" rows="10"></textarea></label>
         <br/><br>
         <input type="submit" name="kuld" value="Küld" id="kuld">
         <button type="button" onclick="ellenoriz();">Ellenőriz</button>
@@ -31,15 +31,31 @@ if(!empty($_POST))
         exit("Hibás email");
     }
 
-    if(!isset($_POST['szoveg']) || empty($_POST['szoveg']))
+    if(!isset($_POST['uzenet']) || empty($_POST['uzenet']))
     {
         exit("Hibás szöveg");
     }
 
-    echo "Kapott értékek: ";
-    echo "<pre>";
-    var_dump($_POST);
-    echo "<pre>";
+    // echo "Kapott értékek: ";
+    // echo "<pre>";
+    // var_dump($_POST);
+    // echo "<pre>";
+
+    $dbh = new PDO('mysql:host=localhost;dbname=beadando', 'root', '', null);
+    $dbh->query('SET NAMES utf8 COLLATE utf8_general_ci');
+
+    $query = "INSERT INTO uzenetek(id, nev, email, uzenet) VALUES (0,:nev, :email, :uzenet)";
+    $stmt = $dbh->prepare($query);
+    $stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'], ':uzenet' => $_POST['uzenet']));
+    if($count = $stmt->rowCount()) {
+        $newid = $dbh->lastInsertId();
+        $uzenet = "A regisztrációja sikeres.<br>Azonosítója: {$newid}";
+        $ujra = false;
+    }
+    else {
+        $uzenet = "A regisztráció nem sikerült.";
+        $ujra = true;
+    }
 }
 
 ?>

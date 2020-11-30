@@ -17,18 +17,16 @@ $KEPEKMAPPA='./images/galeria/';
 $TIPUSOK=array('.jpg', '.png', '.webp');
 $MEDIATIPUSOK=array('image/jpeg', 'image/png');
 $DATUMFORMA="Y.m.d. H:i";
-$MAXMERET = 500*1024;
+$MAXMERET = 5000*5000;
 
 $oldalak = array(
     '/'=>array('fajl'=>'cimlap', 'szoveg'=>'Címlap'),
     'legutobbi'=>array('fajl'=>'legutobbi', 'szoveg'=>'Legutóbbi'),
     'galeria'=>array('fajl'=>'galeria', 'szoveg'=>'Képgaléria'),
     'kapcsolat'=>array('fajl'=>'kapcsolat', 'szoveg'=>'Kapcsolat'),
-    // 'versenyek'=>array('fajl'=>'versenyek', 'szoveg'=>'Versenyek'),
-    // 'tagok'=>array('fajl'=>'tagok', 'szoveg'=>'Tagok'),
-    // 'bringasuli'=>array('fajl'=>'bringasuli', 'szoveg'=>'Bringasuli'),
-    // 'elerhetosegek'=>array('fajl'=>'elerhetosegek', 'szoveg'=>'Elerhetosegek'),
-    // 'archivum'=>array('fajl'=>'archivum', 'szoveg'=>'Archívum'),
+    'regisztracio'=>array('fajl'=>'regisztracio', 'szoveg'=>'Regisztráció'),
+    'belepes'=>array('fajl'=>'belepes', 'szoveg'=>'Belépés'),
+    'belep'=>array('fajl'=>'belep', 'szoveg'=>''),
     'videok' =>array('fajl'=>'videok', 'szoveg'=>'Videók')
 );
 

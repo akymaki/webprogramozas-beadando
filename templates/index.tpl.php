@@ -3,6 +3,7 @@
 <head>
     <meta charset=utf-8>
     <title>PCCC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2./css/bootsrap.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/stilus.css">
     <?php
         if(file_exists('./styles/'.$keres['fajl'].'css')) { ?>
@@ -19,6 +20,8 @@
         <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
     </div>
 </body>
+
+
 <footer>
     <hr>
     Támogatóink:<br>
