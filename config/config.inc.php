@@ -24,6 +24,7 @@ $oldalak = array(
     'legutobbi'=>array('fajl'=>'legutobbi', 'szoveg'=>'Legutóbbi'),
     'galeria'=>array('fajl'=>'galeria', 'szoveg'=>'Képgaléria'),
     'kapcsolat'=>array('fajl'=>'kapcsolat', 'szoveg'=>'Kapcsolat'),
+    'uzenetek'=>array('fajl'=>'uzenetek', 'szoveg'=>'Üzenetek'),
     'regisztracio'=>array('fajl'=>'regisztracio', 'szoveg'=>'Regisztráció'),
     'belepes'=>array('fajl'=>'belepes', 'szoveg'=>'Belépés'),
     'belep'=>array('fajl'=>'belep', 'szoveg'=>''),

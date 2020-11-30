@@ -25,3 +25,9 @@ CREATE TABLE `beadando`.`uzenetek` (
     )
 ENGINE = MyISAM
 CHARSET=utf8 COLLATE utf8_general_ci;
+
+INSERT INTO 'uzenetek' ('id', 'nev', 'email', 'uzenet') VALUES (
+(0, 'bela', 'bela@bela.hu', 'Ez egy üzenet'),
+(0, 'jozsi', 'jozsi@bela.hu', 'Ez kettő üzenet'),
+(0, 'peter', 'peter@peter.hu', 'Ez három üzenet'),
+(0, 'jalán', 'jalán@jalán.hu', 'Ez négy üzenet'))
